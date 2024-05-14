@@ -1,3 +1,8 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
 local Skibidi = Instance.new("ScreenGui")
 local _Frame = Instance.new("Frame")
 local Main = Instance.new("Frame")
@@ -31,6 +36,7 @@ local _Shadow_4 = Instance.new("ImageLabel")
 local TextLabel_3 = Instance.new("TextLabel")
 local TextLabel_4 = Instance.new("TextLabel")
 
+--Properties:
 
 Skibidi.Name = "Skibidi"
 Skibidi.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -209,9 +215,7 @@ Notification1.Position = UDim2.new(0.1942029, 0, 1.02631581, 0)
 Notification1.Size = UDim2.new(0, 413, 0, 75)
 Notification1.Visible = false
 Notification1.ZIndex = 2
-Notification1.MouseButton1Down:Connect(function()
-	loadstring(game:HttpGet(('https://raw.githubusercontent.com/zackmackburnger/zdf-is-ass/main/gui/bindtp.lua'),true))()
-end)
+
 
 _UICorner_7.CornerRadius = UDim.new(0, 15)
 _UICorner_7.Name = "_UICorner"
@@ -227,6 +231,9 @@ CTRLTP.Position = UDim2.new(0.0522316918, 0, 0.10100016, 0)
 CTRLTP.Size = UDim2.new(0, 61, 0, 59)
 CTRLTP.ZIndex = 3
 CTRLTP.Image = "rbxassetid://17488450122"
+CTRLTP.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/zackmackburnger/zdf-is-ass/main/gui/bindtp.lua'),true))()
+end)
 
 _UICorner_8.CornerRadius = UDim.new(0, 15)
 _UICorner_8.Name = "_UICorner"
@@ -284,9 +291,6 @@ Notification.Position = UDim2.new(0.1942029, 0, 1.02631581, 0)
 Notification.Size = UDim2.new(0, 413, 0, 75)
 Notification.Visible = false
 Notification.ZIndex = 2
-Camlock.MouseButton1Down:Connect(function()
-	loadstring(game:HttpGet(('https://raw.githubusercontent.com/zackmackburnger/zdf-is-ass/main/gui/camlock.lua'),true))()
-end)
 
 _UICorner_9.CornerRadius = UDim.new(0, 15)
 _UICorner_9.Name = "_UICorner"
@@ -302,6 +306,9 @@ Camlock_2.Position = UDim2.new(0.0522316918, 0, 0.10100016, 0)
 Camlock_2.Size = UDim2.new(0, 61, 0, 59)
 Camlock_2.ZIndex = 3
 Camlock_2.Image = "rbxassetid://17489096709"
+Camlock_2.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/zackmackburnger/zdf-is-ass/main/gui/camlock.lua'),true))()
+end)
 
 _UICorner_10.CornerRadius = UDim.new(0, 15)
 _UICorner_10.Name = "_UICorner"
@@ -351,13 +358,13 @@ TextLabel_4.TextWrapped = true
 
 -- Scripts:
 
-local function PISFOKJ_fake_script() -- _Frame.Keybind 
+local function SGPPAK_fake_script() -- _Frame.Keybind 
 	local script = Instance.new('LocalScript', _Frame)
 
 	local frame = script.Parent local function onKeyPress(input) if input.KeyCode == Enum.KeyCode.Insert then frame.Visible = not frame.Visible end end game:GetService("UserInputService").InputBegan:Connect(onKeyPress)print("insert")
 end
-coroutine.wrap(PISFOKJ_fake_script)()
-local function XBIS_fake_script() -- Clear.LocalScript 
+coroutine.wrap(SGPPAK_fake_script)()
+local function CPQTJ_fake_script() -- Clear.LocalScript 
 	local script = Instance.new('LocalScript', Clear)
 
 	local textBox = script.Parent.Parent:WaitForChild("_TextBox")
@@ -368,8 +375,8 @@ local function XBIS_fake_script() -- Clear.LocalScript
 	clearButton.MouseButton1Click:Connect(clearTextBox)
 	
 end
-coroutine.wrap(XBIS_fake_script)()
-local function HHFRPR_fake_script() -- Main.Built 
+coroutine.wrap(CPQTJ_fake_script)()
+local function AFTTJ_fake_script() -- Main.Built 
 	local script = Instance.new('LocalScript', Main)
 
 	-- Assuming _Frame, _TextBox, and _Button are children of the same parent frame
@@ -387,8 +394,8 @@ local function HHFRPR_fake_script() -- Main.Built
 	end)
 	
 end
-coroutine.wrap(HHFRPR_fake_script)()
-local function CJVX_fake_script() -- Execute.FovLocal 
+coroutine.wrap(AFTTJ_fake_script)()
+local function DYHSTP_fake_script() -- Execute.FovLocal 
 	local script = Instance.new('LocalScript', Execute)
 
 	local typingDelay = 1 -- Adjust the delay time as needed
@@ -420,8 +427,8 @@ local function CJVX_fake_script() -- Execute.FovLocal
 	script.Parent.Parent.Parent._TextBox:GetPropertyChangedSignal("Text"):Connect(printToConsole)
 	
 end
-coroutine.wrap(CJVX_fake_script)()
-local function YPPGK_fake_script() -- Main.Built 
+coroutine.wrap(DYHSTP_fake_script)()
+local function TLGCHFC_fake_script() -- Main.Built 
 	local script = Instance.new('LocalScript', Main)
 
 	-- Assuming _Frame, _TextBox, and _Button are children of the same parent frame
@@ -439,8 +446,8 @@ local function YPPGK_fake_script() -- Main.Built
 	end)
 	
 end
-coroutine.wrap(YPPGK_fake_script)()
-local function SYOPG_fake_script() -- Skibidi.Drag 
+coroutine.wrap(TLGCHFC_fake_script)()
+local function LMGC_fake_script() -- Skibidi.Drag 
 	local script = Instance.new('LocalScript', Skibidi)
 
 	frame = script.Parent.Top._Frame
@@ -448,6 +455,4 @@ local function SYOPG_fake_script() -- Skibidi.Drag
 	frame.Selectable = true
 	frame.Active = true
 end
-coroutine.wrap(SYOPG_fake_script)()
-
--- DO NOT SKID
+coroutine.wrap(LMGC_fake_script)()
